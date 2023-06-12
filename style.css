@@ -1,0 +1,93 @@
+body {
+    color: white;
+} 
+
+.sectone {
+    background-color: rgb(42,206,192);
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectone > h1 {
+    font-size: 40px;
+    font-family: courier ;
+    font-style: italic;
+}
+
+.sectwo {
+    background-color: black;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div
+ {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+    font-size: large;
+    font-style: italic;
+    margin-top: 0px;
+
+
+
+
+}
+
+.colorbar {
+    width: 190px;
+    height: 40px;
+    background-color: black;
+    margin-top: 15%;
+    margin-bottom: 0px;
+  
+}
+
+.htit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+ background-color: black;
+ font-size: medium;
+ font-style: normal;
+ display: flex;
+ flex-direction: column;
+ height: 66%;
+margin-top: 0px;
+}
+
+
+.boxone { display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.boxone > .colorbar {
+   background-color: #33A8DD ;
+}
+
+.boxtwo > .colorbar {
+    background-color: #F56732;
+
+}
+
+
+
+.boxthree > .colorbar {
+    background-color: #2ACEC0;
+}
+
+ 
+
+
+
+
