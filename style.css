@@ -1,3 +1,4 @@
+
 body {
     color: white;
  
@@ -9,6 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-area: sectone;
 }
 
 .sectone > h1 {
@@ -22,6 +24,7 @@ body {
     height: 450px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-area: sectwo;
 }
 
 div
@@ -70,11 +73,13 @@ margin-top: 0px;
     align-items: center;
 
 
+
 }
 
 .boxone > .colorbar {
    background-color: #33A8DD ;
 }
+
 
 .boxtwo > .colorbar {
     background-color: #F56732;
@@ -82,22 +87,34 @@ margin-top: 0px;
 }
 
 
-
 .boxthree > .colorbar {
     background-color: #2ACEC0;
 }
 
-
-
-
-
-@media (min-width:576px) {
-    .container { display: flex;
-        flex-direction: row;
+@media (min-width 578px) {
+    .container {display: grid;
+    grid-template-columns: 1200px;
+    grid-template-rows: 300px 200px 200px 200px 200px
+    }
+    .sectwo { display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 
+        grid-template-areas:
+        "boxone"
+        "boxtwo"
+        "boxthree";
     }
     
-}
- 
+
+    .boxone {
+        grid-area: boxone;
+    }
+    .boxtwo {
+        grid-area: boxtwo;
+    }
+    .boxthree {
+        grid-area: boxthree;
+    }
 
 
 
