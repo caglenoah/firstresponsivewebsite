@@ -1,5 +1,6 @@
 body {
     color: white;
+ 
 } 
 
 .sectone {
@@ -86,6 +87,16 @@ margin-top: 0px;
     background-color: #2ACEC0;
 }
 
+
+
+
+
+@media (min-width:576px) {
+    .container { display: flex;
+        flex-direction: row;
+    }
+    
+}
  
 
 
