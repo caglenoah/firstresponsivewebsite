@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: sectone;
+  
 }
 
 .sectone > h1 {
@@ -24,8 +24,7 @@ body {
     height: 450px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-area: sectwo;
-}
+   }
 
 div
  {
@@ -91,31 +90,31 @@ margin-top: 0px;
     background-color: #2ACEC0;
 }
 
-@media (min-width 578px) {
-    .container {display: grid;
-    grid-template-columns: 1200px;
-    grid-template-rows: 300px 200px 200px 200px 200px
+@media (max-width: 578px) {
+    .container { display: flex;
+        flex-flow: column wrap;
+        background-color: black;
+
     }
     .sectwo { display: grid;
+        width: fit-content;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 
-        grid-template-areas:
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
         "boxone"
         "boxtwo"
         "boxthree";
+        background-size: ;
     }
-    
-
-    .boxone {
+    .boxone { display: grid;
         grid-area: boxone;
     }
-    .boxtwo {
+    .boxtwo  { display: grid;
         grid-area: boxtwo;
     }
-    .boxthree {
-        grid-area: boxthree;
+   .boxthree { display: grid;
+    grid-area: boxthree; 
     }
-
-
+}
 
 
